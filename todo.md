@@ -1,4 +1,5 @@
 <h1>To Do</h1>
+<h3>Change urls inside of latest.js and installation.html to be compatible with the new repo</h3>
 <p>Make an independant repo</p>
 <p>Make a better way to redirect to content owner.</p>
 <p>Make a variable that checks window.top and location.href type stuff so there isnt 3 if statements.</p>

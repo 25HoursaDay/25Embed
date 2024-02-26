@@ -167,7 +167,7 @@ function _25HoursaDay_on_github(del, rsn) {
   <script>
   var ogContent = self.location;
   function ogSrc() {window.open(ogContent);}
-  function repo() {window.open("https://github.com/25HoursaDay/commissioned-resources/blob/main/25Embed/README.md#about-25embed");}
+  function repo() {window.open("https://github.com/25HoursaDay/25Embed/blob/main/README.md");}
   
   function changeTheme(tvar1, tvar2, tvar3, tvar4, tvar5) {
   const rdadad = document.querySelector('html');

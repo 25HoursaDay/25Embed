@@ -1,0 +1,385 @@
+<head>
+  <style>
+    html {
+      font-family: "noto sans", "Helvetica", Arial, Roboto, Verdana;
+    }
+
+    #bungus {
+      display: flex;
+      width: 100vw;
+      justify-content: center;
+      align-items: top;
+    }
+
+    #key {
+      display: flex;
+      width: 100vw;
+      justify-content: center;
+      align-items: top;
+      text-align: center;
+    }
+
+    #key h4 {
+      margin: 0 5px 0 5px;
+    }
+
+    #bungus2 {
+      display: flex;
+      width: 100vw;
+      justify-content: center;
+      align-items: top;
+      text-align: center;
+    }
+
+    #btns {
+      display: flex;
+      width: 100vw;
+      position: relative;
+      justify-content: center;
+      align-items: bottom;
+      text-align: center;
+    }
+
+    #warning {
+      display: flex;
+      width: 100vw;
+      position: relative;
+      justify-content: center;
+      align-items: bottom;
+      text-align: center;
+    }
+
+    .btnd {
+      margin: 0 2px 0 2px;
+    }
+
+    #hostingSets input {
+      left: 0;
+      user-select: none;
+    }
+
+    #testingF {
+      box-sizing: border-box;
+      text-align: left;
+      margin-left: 10px;
+      padding-left: 10px;
+      border-left: 3px solid grey;
+    }
+
+    input:hover {
+      cursor: pointer;
+    }
+
+    .proto1 {}
+
+    #hostingSets {
+      box-sizing: border-box;
+      text-align: left;
+    }
+
+    #listing {
+      box-sizing: border-box;
+      text-align: left;
+    }
+
+    #number3 {
+      box-sizing: border-box;
+      text-align: left;
+      margin-right: 10px;
+      padding-right: 10px;
+      margin-left: 10px;
+      padding-left: 10px;
+      border-left: 3px solid grey;
+      border-right: 3px solid grey;
+    }
+
+    .disabled {
+      color: grey;
+    }
+
+    label {
+      user-select: none;
+
+    }
+
+    label:hover {
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<div id="bungus2">
+  <h1>Custom 25embed Installation</h1>
+</div>
+<div id="key">
+  <h4><a style="">Normal</a> = <a style="">Default</a></h4>
+  <h4>|</h4>
+  <h4><a style="color:lime;">Green</a> = <a style="color:lime;">Enabled</a></h4>
+  <h4>|</h4>
+  <h4><a style="color:red;">Red</a> = <a style="color:red;">Disabled</a></h4>
+  <h4>|</h4>
+  <h4><a style="color:grey;">Grey</a> = <a style="color:grey;">Forced</a></h4>
+</div><br>
+<div id="bungus">
+  <div id="hostingSets">
+    <h2>Settings:</h2>
+    <p>Main settings for _25embedOptions.</p>
+    <h3>Basic:</h3>
+    <label for="ash"><input type="checkbox" name="ash" id="ash" onChange="changeC()" checked>Allow Same Host Domain</label><br>
+    <label for="fuh"><input type="checkbox" name="fuh" id="fuh" onChange="changeC()">Allow "File:" Url Hosting</label><br>
+    <label for="duh"><input type="checkbox" name="duh" id="duh" onChange="changeC()">Allow "Data:" Url Hosting</label><br>
+    <label for="abh"><input type="checkbox" name="abh" id="abh" onChange="changeC()" checked>Allow "Blob:" Url Hosting</label><br>
+    <label for="abh2"><input type="checkbox" name="abh2" id="abh2" onChange="changeC()" checked>Allow Blank Hosting</label><br>
+    <label for="aph"><input type="checkbox" name="aph" id="aph" onChange="changeC()" checked>Allow Proxy Use</label><br>
+
+    <h3>Advanced:</h3>
+    <p>These features are not yet ready.</p>
+    <p>Please contact the developer to change these.</p>
+    <label for="aohahp"><input type="checkbox" name="aohahp" id="aohahp" class="proto1" onChange='conflictedInputs("aohp")'>Allow only "http:" and "https:" Protocols</label><br>
+    <label for="aohp"><input type="checkbox" name="aohp" id="aohp" class="proto1" onChange='conflictedInputs("aohahp")'>Allow only "https:" Protocol</label><br>
+    <label for="rck"><input type="checkbox" name="rck" id="rck" onChange="changeC()" disabled>Enable Rickroll</label><br><label for="std"><input type="checkbox" name="std" id="std" onChange="changeC()" checked disabled>Support The Dev</label>
+  </div>
+  <div id="number3">
+    <h2>Style Control:</h2>
+    <p>Change style settings.</p>
+    <h3>Basic:</h3>
+    <label for="themeL">Theme:
+      <select id="themeL" name="themeL" onChange="changeC()">
+        <option value="blueT">Blue</option>
+        <option value="redT">Red</option>
+        <option value="greenT">Green</option>
+        <option value="whiteT">White</option>
+      </select>
+    </label>
+    <h2>Other Settings:</h2>
+    <h3>Basic:</h3>
+    <label for="lnktl"><input type="checkbox" name="lnktl" id="lnktl" onChange="changeC()">Include Latest.js Script</label><br><br>
+    <label id="cdnListL" for="cdnList">CDN:
+      <select id="cdnList" name="cdnList" onChange="changeC()">
+        <option id="jsDelivr" value="1">jsDelivr</option>
+        <option id="cloudflare" value="2">Cloudflare</option>
+        <option id="githubIo" value="3">Github.io</option>
+        <option id="githubRaw" value="4">Github Raw</option>
+        <option id="githack" value="5">Githack</option>
+        <option id="unpkg" value="6">unpkg</option>
+      </select>
+    </label>
+  </div>
+  <div id="listing">
+    <h2>Domain Control (Advanced):</h2>
+    <p>Blacklist / Whitelist Domains.</p>
+    <h3>Advanced:</h3>
+    <label for="whiteD">Whitelisted Domains (Seperated by commas):<br><textarea type="text" id="whiteD" name="whiteD" placeholder="www.example.com" rows="3" cols="34"></textarea></label><br>
+    <br>
+    <label for="blackD">Blacklisted Domains (Seperated by commas):<br><textarea type="text" id="blackD" name="blackD" placeholder="www.example.com" rows="3" cols="34"></textarea></label><br>
+  </div>
+  <div id="testingF">
+    <h2>(Advanced) Beta Features:</h2>
+    <p>Features not yet finished or features that are unstable.</p>
+    <p>These features may break or slow your site.</p>
+    <label for="UTP"><input type="checkbox" name="UTP" id="UTP" onChange="changeC()" disabled>Enable ultraThreatProtection</label>
+  </div>
+</div>
+<br>
+<div id="warning">
+  <h4>A warning might pop up if you try to run the file on a Windows PC, feel free to look through the code if that will make you feel better.</h4>
+</div>
+<div id="btns">
+  <button class="btnd" id="copy" onclick='subOpts("0")'>Copy Result</button>
+  <button class="btnd" id="dwnl" onclick='subOpts("1")'>Download as File</button>
+  <button class="btnd" id="github" onclick='subOpts("2")'>GitHub</button>
+  <script>
+    document.getElementById("cdnListL").value = "1";
+    var cdnURL = "https://cdn.jsdelivr.net/gh/25HoursaDay/commissioned-resources@main/25Embed/latest.js";
+    var _25embedCrunch = "";
+
+    function subOpts(ii) {
+      /* CDN stuff */
+      var valL = document.getElementById("cdnListL").value;
+      if (document.getElementById("lnktl").checked) {
+        if (valL == "1") {
+          var cdnURL = "https://cdn.jsdelivr.net/gh/25HoursaDay/commissioned-resources@main/25Embed/latest.js";
+        }
+        if (valL == "2") {
+          var cdnURL = "https://commissioned-resources.pages.dev/25Embed/latest.js";
+        }
+        if (valL == "3") {
+          var cdnURL = "https://25HoursaDay.github.io/commissioned-resources/25Embed/latest.js";
+        }
+        if (valL == "4") {
+          var cdnURL = "https://raw.githubusercontent.com/25HoursaDay/commissioned-resources/main/25Embed/latest.js";
+        }
+        if (valL == "5") {
+          var cdnURL = "https://raw.githack.com/25HoursaDay/commissioned-resources/main/25Embed/latest.js";
+        }
+        if (valL == "6") {
+          var cdnURL = "";
+        }
+        var _25embedCrunch = `let _25embedImport = document.createElement("script");
+_25embedImport.src = "` + cdnURL + `";
+document.head.append(_25embedImport);`;
+      } else {
+        var _25embedCrunch = "";
+      }
+      /* end of CDN stuff */
+      /* note 2 self: new code on end here */
+      var wL = document.getElementById("whiteD").value;
+      wL = wL.trim();
+      wL = wL.toLowerCase();
+      wL = wL.toString();
+      wL = wL.replace(/,/g, '","');
+      wL = wL.split(",");
+      var bL = document.getElementById("blackD").value;
+      bL = bL.trim();
+      bL = bL.toLowerCase();
+      bL = bL.toString();
+      bL = bL.replace(/,/g, '","');
+      bL = bL.split(",");
+      if (document.getElementById("ash").checked) {
+        var val1 = "y"
+      } else {
+        var val1 = "n"
+      }
+      if (document.getElementById("fuh").checked) {
+        var val2 = "y"
+      } else {
+        var val2 = "n"
+      }
+      if (document.getElementById("duh").checked) {
+        var val3 = "y"
+      } else {
+        var val3 = "n"
+      }
+      if (document.getElementById("abh").checked) {
+        var val4 = "y"
+      } else {
+        var val4 = "n"
+      }
+      if (document.getElementById("abh2").checked) {
+        var val5 = "y"
+      } else {
+        var val5 = "n"
+      }
+      if (document.getElementById("aph").checked) {
+        var val6 = "y"
+      } else {
+        var val6 = "n"
+      }
+      if (document.getElementById("std").checked) {
+        var val7 = "y"
+      } else {
+        var val7 = "n"
+      }
+      if (document.getElementById("aohahp").checked) {
+        var val8 = "y"
+      } else {
+        var val8 = "n"
+      }
+      if (document.getElementById("aohp").checked) {
+        var val9 = "y"
+      } else {
+        var val9 = "n"
+      }
+      if (document.getElementById("rck").checked) {
+        var val10 = "y"
+      } else {
+        var val10 = "n"
+      }
+      if (document.getElementById("UTP").checked) {
+        var val11 = "y"
+      } else {
+        var val11 = "n"
+      }
+
+      const subOptsL = [
+        `
+const _25embedOptions = {
+allowSameHost:"` + val1 + `",
+allowFileHost:"` + val2 + `",
+allowDataHost:"` + val3 + `",
+allowBlobHost:"` + val4 + `",
+allowBlankHost:"` + val5 + `",
+allowProxyHost:"` + val6 + `",
+supportDevs:"` + val7 + `",
+onlyAllowHTTP:"` + val8 + `",
+onlyAllowHTTPS:"` + val9 + `",
+rickRoll:"` + val10 + `",
+ultraThreatProtection:"` + val11 + `"
+     };
+const _25embedWhitelistDomains = ["25HoursaDay.github.io","home-schoology.github.io","` + wL + `"];
+const _25embedBlacklistDomains = ["` + bL + `"];
+
+` + _25embedCrunch + ``
+      ];
+      if (ii == "0") {
+        navigator.clipboard.writeText(subOptsL);
+        /* clipboard successfully set */
+        document.getElementById('copy').innerHTML = "Copied!";
+        setTimeout(() => {
+          document.getElementById('copy').innerHTML = `Copy Result`
+        }, 1000);
+      }
+      if (ii == "1") {
+        var element = document.createElement('a');
+        element.setAttribute('href', 'data:text/javascript;charset=utf-8,' + encodeURIComponent(subOptsL));
+        element.setAttribute('download', '25EmbedConfig.js');
+        element.style.display = 'none';
+        document.body.appendChild(element);
+        element.click();
+        document.body.removeChild(element);
+        document.getElementById('dwnl').innerHTML = "Downloaded!";
+        setTimeout(() => {
+          document.getElementById('dwnl').innerHTML = `Download as File`
+        }, 1000);
+      }
+      if (ii == "2") {
+        window.open("https://github.com/25HoursaDay/commissioned-resources/tree/main/25Embed");
+      }
+      window.alert(subOptsL);
+    }
+
+    function changeC() {
+      var inputList = document.getElementsByTagName('input');
+      for (var i = 0; i < inputList.length; i++) {
+        if (inputList[i].disabled) {
+          inputList[i].parentElement.style.color = "grey";
+        } else {
+          if (inputList[i].checked) {
+            if (inputList[i].defaultChecked) {
+              inputList[i].parentElement.style.color = "black";
+            } else {
+              inputList[i].parentElement.style.color = "lime";
+            }
+          } else {
+            if (inputList[i].defaultChecked) {
+              inputList[i].parentElement.style.color = "red";
+            } else {
+              inputList[i].parentElement.style.color = "black";
+            }
+          }
+        }
+      }
+      if (document.getElementById("lnktl").checked) {
+        document.getElementById("cdnListL").style.display = "block";
+        document.getElementById("cdnList").style.display = "inline";
+
+      } else {
+        document.getElementById("cdnList").style.display = "none";
+        document.getElementById("cdnListL").style.display = "none";
+      }
+      /* note to self: put new code here */
+    }
+    changeC();
+
+    function conflictedInputs(IDs) {
+      const xax = IDs.trim().toLowerCase().toString().split(",");
+      for (var i = 0; i < xax.length; i++) {
+        if (document.getElementById(xax[i]).checked) {
+          document.getElementById(xax[i]).checked = false;
+        }
+      }
+      changeC();
+    }
+
+  </script>
+</div>

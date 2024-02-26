@@ -2,13 +2,6 @@
 
 **<h2>If you were directed to this page from an embed, please contact the original content owner to let them know their hard work is being stolen!</h2>**
 
-<div align = center>
-  
-![GitHub Repo stars](https://img.shields.io/github/stars/25HoursaDay/commissioned-resources?style=social)
-
-</div>
-<p>25Embed is a tool to prevent your content from being stolen using embeds.</p>
-
 <h1>Installation</h1>
 <p>To install 25Embed, first you must create your own <a href="https://github.com/25HoursaDay/commissioned-resources/blob/main/25Embed/config.js">config.js</a> file using the <a href="">25Embed Config Tool</a> if you want custom settings.
 </p>

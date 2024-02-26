@@ -190,7 +190,7 @@
   <button class="btnd" id="github" onclick='subOpts("2")'>GitHub</button>
   <script>
     document.getElementById("cdnListL").value = "1";
-    var cdnURL = "https://cdn.jsdelivr.net/gh/25HoursaDay/commissioned-resources@main/25Embed/latest.js";
+    var cdnURL = "https://cdn.jsdelivr.net/gh/25HoursaDay/25Embed@master/latest.js";
     var _25embedCrunch = "";
 
     function subOpts(ii) {
@@ -198,19 +198,19 @@
       var valL = document.getElementById("cdnListL").value;
       if (document.getElementById("lnktl").checked) {
         if (valL == "1") {
-          var cdnURL = "https://cdn.jsdelivr.net/gh/25HoursaDay/commissioned-resources@main/25Embed/latest.js";
+          var cdnURL = "https://cdn.jsdelivr.net/gh/25HoursaDay/25Embed@master/latest.js";
         }
         if (valL == "2") {
-          var cdnURL = "https://commissioned-resources.pages.dev/25Embed/latest.js";
+          var cdnURL = "Instert cloudflare pages.dev link here";
         }
         if (valL == "3") {
-          var cdnURL = "https://25HoursaDay.github.io/commissioned-resources/25Embed/latest.js";
+          var cdnURL = "https://25HoursaDay.github.io/25Embed/latest.js";
         }
         if (valL == "4") {
-          var cdnURL = "https://raw.githubusercontent.com/25HoursaDay/commissioned-resources/main/25Embed/latest.js";
+          var cdnURL = "https://raw.githubusercontent.com/25HoursaDay/25Embed/main/latest.js";
         }
         if (valL == "5") {
-          var cdnURL = "https://raw.githack.com/25HoursaDay/commissioned-resources/main/25Embed/latest.js";
+          var cdnURL = "https://raw.githack.com/25HoursaDay/25Embed/main/latest.js";
         }
         if (valL == "6") {
           var cdnURL = "";
@@ -333,7 +333,7 @@ const _25embedBlacklistDomains = ["` + bL + `"];
         }, 1000);
       }
       if (ii == "2") {
-        window.open("https://github.com/25HoursaDay/commissioned-resources/tree/main/25Embed");
+        window.open("https://github.com/25HoursaDay/25Embed/tree/main/");
       }
       window.alert(subOptsL);
     }

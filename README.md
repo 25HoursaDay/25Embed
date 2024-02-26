@@ -3,11 +3,11 @@
 **<h2>If you were directed to this page from an embed, please contact the original content owner to let them know their hard work is being stolen!</h2>**
 
 <h1>Installation</h1>
-<p>To install 25Embed, first you must create your own <a href="https://github.com/25HoursaDay/commissioned-resources/blob/main/25Embed/config.js">config.js</a> file using the <a href="">25Embed Config Tool</a> if you want custom settings.
+<p>To install 25Embed, first you must create your own <a href="https://github.com/25HoursaDay/25Embed/blob/main/config.js">config.js</a> file using the <a href="">25Embed Config Tool</a> if you want custom settings.
 </p>
 
 <h3>Install with HTML (recommended)</h3>
-<p>To install 25Embed in an HTML file, you must add the <a href="https://github.com/25HoursaDay/commissioned-resources/blob/main/25Embed/latest.js">latest.js</a> file and your custom <a href="https://github.com/25HoursaDay/commissioned-resources/blob/main/25Embed/config.js">config.js</a> file (leave it out if you want default settings.) to two script tags in the head of your file (two script tags in total).</p>
+<p>To install 25Embed in an HTML file, you must add the <a href="https://github.com/25HoursaDay/25Embed/blob/main/latest.js">latest.js</a> file and your custom <a href="https://github.com/25HoursaDay/25Embed/blob/main/config.js">config.js</a> file (leave it out if you want default settings.) to two script tags in the head of your file (two script tags in total).</p>
 
 <p>Example:</p>
 
@@ -24,7 +24,7 @@
 </html>
 ```
 
-Put your [config.js](https://github.com/25HoursaDay/commissioned-resources/blob/main/25Embed/config.js) file url where it says "path to config file", and put the [25Embed](https://github.com/25HoursaDay/commissioned-resources/blob/main/25Embed/latest.js) file url where it says "path to 25Embed file".
+Put your [config.js](https://github.com/25HoursaDay/25Embed/blob/main/config.js) file url where it says "path to config file", and put the [25Embed](https://github.com/25HoursaDay/25Embed/blob/main/latest.js) file url where it says "path to 25Embed file".
 
 <h3>Install with Javascript</h3>
 
@@ -35,12 +35,12 @@ document.head.append(`
   <script src="path to 25Embed file"></script>
 `);
 ```
-Put your [config.js](https://github.com/25HoursaDay/commissioned-resources/blob/main/25Embed/config.js) file url where it says "path to config file", and put the [25Embed](https://github.com/25HoursaDay/commissioned-resources/blob/main/25Embed/latest.js) file url where it says "path to 25Embed file".
+Put your [config.js](https://github.com/25HoursaDay/25Embed/blob/main/config.js) file url where it says "path to config file", and put the [25Embed](https://github.com/25HoursaDay/25Embed/blob/main/latest.js) file url where it says "path to 25Embed file".
 
 <h3>Settings</h3>
 
-The [config.js](https://github.com/25HoursaDay/commissioned-resources/blob/main/25Embed/config.js) file is the file where your 25Embed settings are held.
-If you would like to change your config file to enable/disable the default settings, you must create your own [config.js](https://github.com/25HoursaDay/commissioned-resources/blob/main/25Embed/config.js) file with the settings adjusted to your liking.
+The [config.js](https://github.com/25HoursaDay/25Embed/blob/main/config.js) file is the file where your 25Embed settings are held.
+If you would like to change your config file to enable/disable the default settings, you must create your own [config.js](https://github.com/25HoursaDay/25Embed/blob/main/config.js) file with the settings adjusted to your liking.
 To see a list of all settings and their functions, [click here!]()
 
 <h1>History</h1>
@@ -61,7 +61,7 @@ Basically Unframed but was made for embeds. It's the same concept.
 <p>This tool is not perfect under any means, that means it cannot protect from everything, so here I will list various vulnerabilities and ways to further protect your site in hopes that your content will remain safe.</p>
 <h3>Vulnerabilities</h3>
 <h4>Problem | Solution</h4>
-<p>Sandbox iframes | A project I found called <a href="https://github.com/JamesMGreene/sandblaster">Sandblaster</a> may work</p>
+<p>Sandbox iframes | A project I found called <a href="https://github.com/JamesMGreene/sandblaster">Sandblaster</a> may work (although it is a little outdated</p>
 <p>Outsider scripts that run before 25E | Make sure 25E is the first script ran on your site</p>
 <p>Proxies | Some Anti-Proxy products do exist, but almost all of them either dont work very well, need to grab the user's IP, or both. I am currently working on a solution to this problem.</p>
 <p>Plain code ripping | Not sure, maybe use your host to run scripts? Idk beckend stuffs.</p>

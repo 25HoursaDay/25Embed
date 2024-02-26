@@ -149,13 +149,13 @@ function ogSrc() {
 }
 
 function repo() {
-  window.open("https://github.com/25HoursaDay/commissioned-resources/blob/main/25Embed/README.md#about-25embed");
+  window.open("https://github.com/25HoursaDay/25Embed/blob/main/README.md");
 }
 */
 function _25HoursaDay_on_github(del, rsn) {
   if (del == "n") {
     document.write(`
-  <link href="https://cdn.jsdelivr.net/gh/25HoursaDay/commissioned-resources@8d4c488e3d3ea97213f07cbcc2a8215df2927b70/25Embed/style.css" rel="stylesheet" type="text/css"/>
+  <link href="https://cdn.jsdelivr.net/gh/25HoursaDay/25Embed@master/style.css" rel="stylesheet" type="text/css"/>
   ` + supDev + `
   <div id="_25embedScreen" class="_25embedScreen">
   <h1 id="titleMsg" class="titleMsg">This content has been guarded by 25Embed.</h1>

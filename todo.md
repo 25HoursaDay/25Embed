@@ -1,5 +1,5 @@
 <h1>To Do</h1>
-<h3>Change urls inside of latest.js and installation.html to be compatible with the new repo</h3>
+<h3>Fix issues that arised when transfering files from different repo</h3>
 <p>Collaborate with creator of sandblaster?</p>
 <p>Add more CDNs and compatibility</p>
 <p>Make a better way to redirect to content owner.</p>

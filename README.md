@@ -1,4 +1,4 @@
-**<h1 align="center">25Embed</h1>**
+**<h1 align="center">25Embed (name WIP)</h1>**
 
 **<h2>If you were directed to this page from an embed, please contact the original content owner to let them know their hard work is being stolen!</h2>**
 

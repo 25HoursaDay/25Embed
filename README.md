@@ -7,7 +7,7 @@
 </p>
 
 <h3>Install with HTML (recommended)</h3>
-<p>To install 25Embed in an HTML file, you must add the <a href="https://github.com/25HoursaDay/25Embed/blob/main/latest.js">latest.js</a> file and your custom <a href="https://github.com/25HoursaDay/25Embed/blob/main/config.js">config.js</a> file (leave it out if you want default settings.) to two script tags in the head of your file (two script tags in total).</p>
+<p>To install 25Embed in an HTML file, you must add the <a href="https://github.com/25HoursaDay/25Embed/blob/main/latest.js">latest.js</a> file and custom <a href="https://github.com/25HoursaDay/25Embed/blob/main/config.js">config.js</a> file (leave out if you want default settings) in script tags in the head of your file.</p>
 
 <p>Example:</p>
 

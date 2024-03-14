@@ -28,7 +28,7 @@ Put your [config.js](https://github.com/25HoursaDay/25Embed/blob/main/config.js)
 
 <h3>Install with Javascript</h3>
 
-If you would like to install 25Embed in your index.js file, you must add the following code:
+If you would like to install 25Embed in your index.js file, you can add the following code:
 ```javascript
 document.head.append(`
   <script src="path to config file"></script>

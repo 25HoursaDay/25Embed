@@ -1,4 +1,5 @@
 <!-- This is the page a developer can use to easily set up 25Embed on their website. -->
+
 <head>
   <style>
     html {
@@ -146,16 +147,16 @@
     <h3>Basic:</h3>
     <label for="themeL">Theme:
       <select id="themeL" name="themeL" onChange="changeC()">
-        <option value="blueT">Blue</option>
-        <option value="redT">Red</option>
-        <option value="greenT">Green</option>
-        <option value="whiteT">White</option>
+        <option value="blue">Blue</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="white">White</option>
       </select>
     </label>
     <h2>Other Settings:</h2>
     <h3>Basic:</h3>
     <label for="lnktl"><input type="checkbox" name="lnktl" id="lnktl" onChange="changeC()">Include Latest.js Script</label><br><br>
-    <label id="cdnListL" for="cdnList">CDN:
+    <label id="cdnListL" for="cdnList">CDN (Not 100% working):
       <select id="cdnList" name="cdnList" onChange="changeC()">
         <option id="jsDelivr" value="1">jsDelivr</option>
         <option id="cloudflare" value="2">Cloudflare</option>
@@ -237,14 +238,14 @@ document.head.append(_25embedImport);`;
       bL = bL.replace(/,/g, '","');
       bL = bL.split(",");
       if (document.getElementById("ash").checked) {
-        var val1 = "y"
+        var val1 = "y";
       } else {
-        var val1 = "n"
+        var val1 = "n";
       }
       if (document.getElementById("fuh").checked) {
-        var val2 = "y"
+        var val2 = "y";
       } else {
-        var val2 = "n"
+        var val2 = "n";
       }
       if (document.getElementById("duh").checked) {
         var val3 = "y"
@@ -252,45 +253,47 @@ document.head.append(_25embedImport);`;
         var val3 = "n"
       }
       if (document.getElementById("abh").checked) {
-        var val4 = "y"
+        var val4 = "y";
       } else {
-        var val4 = "n"
+        var val4 = "n";
       }
       if (document.getElementById("abh2").checked) {
-        var val5 = "y"
+        var val5 = "y";
       } else {
-        var val5 = "n"
+        var val5 = "n";
       }
       if (document.getElementById("aph").checked) {
-        var val6 = "y"
+        var val6 = "y";
       } else {
-        var val6 = "n"
+        var val6 = "n";
       }
       if (document.getElementById("std").checked) {
-        var val7 = "y"
+        var val7 = "y";
       } else {
-        var val7 = "n"
+        var val7 = "n";
       }
       if (document.getElementById("aohahp").checked) {
-        var val8 = "y"
+        var val8 = "y";
       } else {
-        var val8 = "n"
+        var val8 = "n";
       }
       if (document.getElementById("aohp").checked) {
-        var val9 = "y"
+        var val9 = "y";
       } else {
-        var val9 = "n"
+        var val9 = "n";
       }
       if (document.getElementById("rck").checked) {
-        var val10 = "y"
+        var val10 = "y";
       } else {
-        var val10 = "n"
+        var val10 = "n";
       }
       if (document.getElementById("UTP").checked) {
-        var val11 = "y"
+        var val11 = "y";
       } else {
-        var val11 = "n"
+        var val11 = "n";
       }
+
+      var themeL = document.getElementById("themeL").value;
 
       const subOptsL = [
         `
@@ -307,9 +310,9 @@ onlyAllowHTTPS:"` + val9 + `",
 rickRoll:"` + val10 + `",
 ultraThreatProtection:"` + val11 + `"
      };
-const _25embedWhitelistDomains = ["25HoursaDay.github.io","home-schoology.github.io","` + wL + `"];
+const _25embedWhitelistDomains = ["25HoursaDay.github.io","` + wL + `"];
 const _25embedBlacklistDomains = ["` + bL + `"];
-
+let theme = "` + themeL + `";
 ` + _25embedCrunch + ``
       ];
       if (ii == "0") {

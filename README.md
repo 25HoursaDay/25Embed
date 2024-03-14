@@ -44,9 +44,9 @@ If you would like to change your config file to enable/disable the default setti
 To see a list of all settings and their functions, [click here!]()
 
 <h1>History</h1>
-<p>I first thought of the concept of 25Embed back when I was not so technologically inclined (skid), when I would just embed things into google sites;</p>
-<p>I figured there had to be a way to prevent someone from so easily stealing your content, but I didn't know how to create something like that at the time.</p>
-<p>Fast forward two years, and I had the ability to make something like that... so I did.</p>
+<p>I first thought of the concept of 25Embed back when I was a dumb skid, when I would just embed things into google sites.</p>
+<p>I figured there had to be a way to prevent someone from so easily stealing your content like I was doing, but I didn't know how to create something like that at the time.</p>
+<p>Fast forward two years, and I now had (some of) the ability to make something like that... so I did.</p>
 <p>I now add features and optimize code when I can/want to.</p>
 
 <h1>Similar tools</h1>

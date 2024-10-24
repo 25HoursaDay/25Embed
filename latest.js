@@ -158,7 +158,7 @@ function _25HoursaDay_on_github(del, rsn) {
   <link href="https://cdn.jsdelivr.net/gh/25HoursaDay/25Embed@master/style.css" rel="stylesheet" type="text/css"/>
   ` + supDev + `
   <div id="_25embedScreen" class="_25embedScreen">
-  <h1 id="titleMsg" class="titleMsg">This content has been guarded by 25Embed.</h1>
+  <h1 id="titleMsg" class="titleMsg">This content has been protected by 25Embed.</h1>
   <h2 id="reason" class="reason">Reason: "` + rsn + `"</h2>
   <div class="rowClass">
   <button id="ogSrc" class="mBtn" onclick="ogSrc()">Original Content</button>

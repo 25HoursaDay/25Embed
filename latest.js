@@ -94,7 +94,7 @@ ASH: if (_25embedOptions.allowSameHost == "y") {
           // if whitelisted, skip
         } else {
           if (document.location.hostname != new URL(document.location.ancestorOrigins[i]).hostname) {
-            _25HoursaDay_on_github("n", "This content does not belong to this page.");
+            _25HoursaDay_on_github("n", "The content that was supposed to be displayed does not belong to this site's domain.");
             break ASH;
           }
         }
@@ -167,7 +167,7 @@ function _25HoursaDay_on_github(del, rsn) {
   <script>
   var ogContent = self.location;
   function ogSrc() {window.open(ogContent);}
-  function repo() {window.open("https://github.com/25HoursaDay/25Embed/blob/main/README.md");}
+  function repo() {window.open("https://github.com/25HoursaDay/25Embed/tree/main?tab=readme-ov-file#25embed-name-wip");}
   
   function changeTheme(tvar1, tvar2, tvar3, tvar4, tvar5) {
   const rdadad = document.querySelector('html');

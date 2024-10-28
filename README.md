@@ -69,3 +69,4 @@ Basically Unframed but was made for embeds. It's the same concept.
 <h1>Further Protection</h1>
 <p>To further protect your content, you may want to do some of the following:</p>
 <p>Add authentication like <a href="https://auth0.com/">Auth0</a>.</p>
+<p>Use HTTP headers or meta tags on your site. Many of the settings have better alternatives as HTTP headers and meta tags.</p>

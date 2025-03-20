@@ -17,7 +17,7 @@ const _25embedDefaults = {
 
 const themeList = ["blue", "green", "red"];
 
-
+// checks if config file is configged
 if (typeof _25embedOptions == "undefined") {
   var _25embedOptions = {};
   console.log(_25embedOptions);

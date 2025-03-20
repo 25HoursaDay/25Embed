@@ -1,9 +1,33 @@
-<!-- This page is to show what a block screen might look like. -->
-<link href="https://cdn.jsdelivr.net/gh/25HoursaDay/25Embed@master/style.css" rel="stylesheet" type="text/css"/>
-  <div id="_25embedScreen" class="_25embedScreen">
-  <h1 id="titleMsg" class="titleMsg">This content has been guarded by 25Embed.</h1>
-  <h2 id="reason" class="reason">Reason: ''</h2>
-  <button id="ogSrc" class="mBtn" onclick="ogSrc()">Original Content</button>
-  <button id="repo" class="mBtn" onclick="repo()">More Information</button>
-  <script>var ogContent = self.location; function ogSrc() {window.open(ogContent);} function repo() {window.open("https://github.com/25HoursaDay/25Embed/blob/main/README.md#about-25embed");}</` + `script>
-  </div>
+<html>
+  <!-- This page is to show what a block screen might look like. -->
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/gh/25HoursaDay/25Embed@master/style.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <div id="_25embedScreen" class="_25embedScreen">
+      <h1 id="titleMsg" class="titleMsg">
+        This content has been guarded by 25Embed.
+      </h1>
+      <h2 id="reason" class="reason">Reason: 'Example'</h2>
+      <button id="ogSrc" class="mBtn" onclick="ogSrc()">
+        Original Content
+      </button>
+      <button id="repo" class="mBtn" onclick="repo()">More Information</button>
+      <script>
+        var ogContent = self.location
+        function ogSrc() {
+          window.open(ogContent)
+        }
+        function repo() {
+          window.open(
+            "https://github.com/25HoursaDay/25Embed/blob/main/README.md#about-25embed",
+          )
+        }
+      </script>
+    </div>
+  </body>
+</html>
